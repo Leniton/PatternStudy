@@ -11,8 +11,8 @@ namespace Patterns.Creational.FactoryMethod
         {
             IProduct product = FactoryMethod();
 
+            //Debug.Log("creator operation");
             product.Operation();
-            Debug.Log("something");
         }
     }
 }

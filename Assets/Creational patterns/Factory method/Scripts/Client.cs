@@ -9,9 +9,9 @@ namespace Patterns.Creational.FactoryMethod
     {
         void Start()
         {
-            ConcreteCreator creator = new ConcreteCreator();
+            Creator creator = new FireSkill_Creator();
 
-            creator.FactoryMethod().Operation();
+            creator.SomeOperation();
         }
     }
 }

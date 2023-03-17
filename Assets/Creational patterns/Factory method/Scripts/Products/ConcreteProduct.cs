@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace Patterns.Creational.FactoryMethod
 {
@@ -6,7 +7,7 @@ namespace Patterns.Creational.FactoryMethod
     {
         public void Operation()
         {
-
+            Debug.Log("product operation");
         }
     }
 }
