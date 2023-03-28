@@ -5,7 +5,7 @@ using System;
 
 namespace Patterns.Creational.FactoryMethod
 {
-    public class Client : MonoBehaviour
+    public class Client_FactoryMethod : MonoBehaviour
     {
         void Start()
         {
