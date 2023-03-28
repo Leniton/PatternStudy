@@ -9,12 +9,14 @@ namespace Patterns.Creational.AbstractFactory
     {
         public void ProductFunctionB()
         {
-            throw new System.NotImplementedException();
+            Debug.Log("Product 2B functionality");
         }
 
         public void ColaborativeFunctionB(IAbstractProductA productA)
         {
-            throw new System.NotImplementedException();
+            Debug.Log("Colaborative 2B functionality");
+
+            productA.ProductFunctionA();
         }
     }
 }

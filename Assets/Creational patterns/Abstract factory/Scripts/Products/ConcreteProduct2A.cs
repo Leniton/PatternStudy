@@ -9,7 +9,7 @@ namespace Patterns.Creational.AbstractFactory
     {
         public void ProductFunctionA()
         {
-            throw new System.NotImplementedException();
+            Debug.Log("Product 2A functionality");
         }
     }
 }
