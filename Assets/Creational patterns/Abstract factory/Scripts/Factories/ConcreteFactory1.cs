@@ -5,18 +5,16 @@ using UnityEngine;
 
 namespace Patterns.Creational.AbstractFactory
 {
-    public class ConcreteFactory1 : MonoBehaviour
+    public class ConcreteFactory1 : IAbstract_Factory
     {
-        // Start is called before the first frame update
-        void Start()
+        public IAbstractProductA CreateProductA()
         {
-
+            return new ConcreteProduct1A();
         }
 
-        // Update is called once per frame
-        void Update()
+        public IAbstractProductB CreateProductB()
         {
-
+            return new ConcreteProduct1B();
         }
     }
 }
