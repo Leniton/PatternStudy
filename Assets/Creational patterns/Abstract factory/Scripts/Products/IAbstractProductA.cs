@@ -7,6 +7,6 @@ namespace Patterns.Creational.AbstractFactory
 {
     public interface IAbstractProductA
     {
-        public void ProductFunctionA();
+        public void ProductAFunction();
     }
 }

@@ -7,7 +7,7 @@ namespace Patterns.Creational.AbstractFactory
 {
     public class ConcreteProduct2B : IAbstractProductB
     {
-        public void ProductFunctionB()
+        public void ProductBFunction()
         {
             Debug.Log("Product 2B functionality");
         }
@@ -16,7 +16,7 @@ namespace Patterns.Creational.AbstractFactory
         {
             Debug.Log("Colaborative 2B functionality");
 
-            productA.ProductFunctionA();
+            productA.ProductAFunction();
         }
     }
 }

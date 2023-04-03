@@ -7,7 +7,7 @@ namespace Patterns.Creational.AbstractFactory
 {
     public interface IAbstractProductB
     {
-        public void ProductFunctionB();
+        public void ProductBFunction();
 
         public void ColaborativeFunctionB(IAbstractProductA productA);
     }
