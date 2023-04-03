@@ -8,9 +8,9 @@ namespace Patterns.Creational.AbstractFactory
     {
         private void Start()
         {
-            ClientMethod(new ConcreteFactory1());
-
-            ClientMethod(new ConcreteFactory2());
+            ClientMethod(new SkeletonDungeon_Factory());
+            Debug.Log("----------------");
+            ClientMethod(new SlimeDungeon_Factory());
         }
 
         void ClientMethod(IAbstract_Factory factory)
@@ -19,7 +19,7 @@ namespace Patterns.Creational.AbstractFactory
 
             IAbstractProductB productB = factory.CreateProductB();
 
-            productB.ProductFunctionB();
+            productB.ProductBFunction();
             productB.ColaborativeFunctionB(productA);
         }
     }
