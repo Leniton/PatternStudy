@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using Patterns.Creational.FactoryMethod;
 
-public class FireSkill_Creator : Creator
+public class IceSpellMaker_Creator : Creator
 {
     public override IProduct FactoryMethod()
     {
-        Debug.Log("activating fire skill");
-        return new FireEffect_Product();
+        Debug.Log("creating ice spell");
+        return new IceSpell_Product();
     }
 }

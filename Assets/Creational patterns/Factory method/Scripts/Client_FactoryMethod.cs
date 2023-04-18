@@ -9,7 +9,7 @@ namespace Patterns.Creational.FactoryMethod
     {
         void Start()
         {
-            Creator creator = new FireSkill_Creator();
+            Creator creator = new FireSpellMaker_Creator();
 
             creator.SomeOperation();
         }
