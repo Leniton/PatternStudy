@@ -14,9 +14,9 @@ namespace Patterns.Creational.Prototype
             p1.Id_Info = new Id_Info(666);
 
             // Perform a shallow copy of p1 and assign it to p2.
-            Person p2 = p1.ShallowCopy();
+            Person p2 = (Person)p1.ShallowCopy();
             // Make a deep copy of p1 and assign it to p3.
-            Person p3 = p1.DeepCopy();
+            Person p3 = (Person)p1.DeepCopy();
 
             // Display values of p1, p2 and p3.
             Debug.Log("Original values of p1, p2, p3:");

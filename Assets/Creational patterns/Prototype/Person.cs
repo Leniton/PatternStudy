@@ -4,19 +4,19 @@ using UnityEngine;
 
 namespace Patterns.Creational.Prototype
 {
-    public class Person
+    public class Person : ICopy
     {
         public int Age;
         public DateTime BirthDate;
         public string Name;
         public Id_Info Id_Info;
 
-        public Person ShallowCopy()
+        public ICopy ShallowCopy()
         {
             return (Person)MemberwiseClone();
         }
 
-        public Person DeepCopy()
+        public ICopy DeepCopy()
         {
             Person clone = (Person)MemberwiseClone();
             clone.Id_Info = new Id_Info(Id_Info.IdNumber);
