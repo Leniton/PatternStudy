@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace Patterns.Creational.Builder
 {
-    public class Client_Builder : MonoBehaviour
+    public class Client_Builder : IClient
     {
-        void Start()
+        public void ClientFunction()
         {
             Director director = new Director();
 

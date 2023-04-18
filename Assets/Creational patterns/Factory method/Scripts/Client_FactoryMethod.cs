@@ -5,9 +5,9 @@ using System;
 
 namespace Patterns.Creational.FactoryMethod
 {
-    public class Client_FactoryMethod : MonoBehaviour
+    public class Client_FactoryMethod : IClient
     {
-        void Start()
+        public void ClientFunction()
         {
             Creator creator = new FireSpellMaker_Creator();
 

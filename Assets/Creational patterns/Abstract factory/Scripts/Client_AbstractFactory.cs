@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace Patterns.Creational.AbstractFactory
 {
-    public class Client_AbstractFactory : MonoBehaviour
+    public class Client_AbstractFactory : IClient
     {
-        private void Start()
+        public void ClientFunction()
         {
             ClientMethod(new SkeletonDungeon_Factory());
             Debug.Log("----------------");
