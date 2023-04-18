@@ -7,7 +7,7 @@ public class Client_Caller : MonoBehaviour
 {
     private void Start()
     {
-        IClient client = new Patterns.Creational.FactoryMethod.Client_FactoryMethod();
+        IClient client = new Patterns.Creational.Prototype.Client_Prototype();
 
         client.ClientFunction();
     }
