@@ -1,13 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Patterns.Creational.FactoryMethod;
 
-public class IceSpellMaker_Creator : Creator
+namespace Patterns.Creational.FactoryMethod.Tests
 {
-    public override IProduct FactoryMethod()
+    public class IceSpellMaker_Creator : Creator
     {
-        Debug.Log("creating ice spell");
-        return new IceSpell_Product();
+        public override IProduct FactoryMethod()
+        {
+            Debug.Log("creating ice spell");
+            return new IceSpell_Product();
+        }
     }
 }

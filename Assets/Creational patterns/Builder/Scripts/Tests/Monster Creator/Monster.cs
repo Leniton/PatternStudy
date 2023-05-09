@@ -1,14 +1,15 @@
-using System.Collections.Generic;
-using UnityEngine;
 
-public class Monster 
+namespace Patterns.Creational.Builder.Tests
 {
-    public int hp, atk, def;
-
-    public Monster()
+    public class Monster
     {
-        hp = 10;
-        atk = 5;
-        def = 3;
+        public int hp, atk, def;
+
+        public Monster()
+        {
+            hp = 10;
+            atk = 5;
+            def = 3;
+        }
     }
 }

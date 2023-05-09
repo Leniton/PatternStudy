@@ -1,14 +1,16 @@
-using Patterns.Creational.AbstractFactory;
 
-public class SlimeDungeon_Factory : IAbstract_Factory
+namespace Patterns.Creational.AbstractFactory.Tests
 {
-    public IAbstractProductA CreateProductA()
+    public class SlimeDungeon_Factory : IAbstract_Factory
     {
-        return new Slime_ProductA();
-    }
+        public IAbstractProductA CreateProductA()
+        {
+            return new Slime_ProductA();
+        }
 
-    public IAbstractProductB CreateProductB()
-    {
-        return new SlimeKing_ProductB();
+        public IAbstractProductB CreateProductB()
+        {
+            return new SlimeKing_ProductB();
+        }
     }
 }

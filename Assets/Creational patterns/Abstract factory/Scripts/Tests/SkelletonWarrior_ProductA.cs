@@ -1,10 +1,12 @@
 using UnityEngine;
-using Patterns.Creational.AbstractFactory;
 
-public class SkelletonWarrior_ProductA : IAbstractProductA
+namespace Patterns.Creational.AbstractFactory.Tests
 {
-    public void ProductAFunction()
+    public class SkelletonWarrior_ProductA : IAbstractProductA
     {
-        Debug.Log("A skelleton warrior appeared!");
+        public void ProductAFunction()
+        {
+            Debug.Log("A skelleton warrior appeared!");
+        }
     }
 }

@@ -1,12 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Patterns.Creational.FactoryMethod;
 
-public class IceSpell_Product : IProduct
+namespace Patterns.Creational.FactoryMethod.Tests
 {
-    public void Operation()
+    public class IceSpell_Product : IProduct
     {
-        Debug.Log("ice spell activated");
+        public void Operation()
+        {
+            Debug.Log("ice spell activated");
+        }
     }
 }

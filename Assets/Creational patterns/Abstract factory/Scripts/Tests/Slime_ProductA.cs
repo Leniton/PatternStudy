@@ -1,10 +1,12 @@
 using UnityEngine;
-using Patterns.Creational.AbstractFactory;
 
-public class Slime_ProductA : IAbstractProductA
+namespace Patterns.Creational.AbstractFactory.Tests
 {
-    public void ProductAFunction()
+    public class Slime_ProductA : IAbstractProductA
     {
-        Debug.Log("A slime appeared!");
+        public void ProductAFunction()
+        {
+            Debug.Log("A slime appeared!");
+        }
     }
 }

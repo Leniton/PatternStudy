@@ -1,14 +1,16 @@
-using Patterns.Creational.AbstractFactory;
 
-public class SkeletonDungeon_Factory : IAbstract_Factory
+namespace Patterns.Creational.AbstractFactory.Tests
 {
-    public IAbstractProductA CreateProductA()
+    public class SkeletonDungeon_Factory : IAbstract_Factory
     {
-        return new SkelletonWarrior_ProductA();
-    }
+        public IAbstractProductA CreateProductA()
+        {
+            return new SkelletonWarrior_ProductA();
+        }
 
-    public IAbstractProductB CreateProductB()
-    {
-        return new SkelletonKing_ProductB();
+        public IAbstractProductB CreateProductB()
+        {
+            return new SkelletonKing_ProductB();
+        }
     }
 }

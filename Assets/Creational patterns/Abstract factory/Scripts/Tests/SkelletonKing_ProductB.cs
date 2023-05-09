@@ -1,17 +1,19 @@
 using UnityEngine;
-using Patterns.Creational.AbstractFactory;
 
-public class SkelletonKing_ProductB : IAbstractProductB
+namespace Patterns.Creational.AbstractFactory.Tests
 {
-    public void ProductBFunction()
+    public class SkelletonKing_ProductB : IAbstractProductB
     {
-        Debug.Log("A skelleton king appeared!");
-    }
+        public void ProductBFunction()
+        {
+            Debug.Log("A skelleton king appeared!");
+        }
 
-    public void ColaborativeFunctionB(IAbstractProductA productA)
-    {
-        Debug.Log("The skelleton king is summoning an underling");
+        public void ColaborativeFunctionB(IAbstractProductA productA)
+        {
+            Debug.Log("The skelleton king is summoning an underling");
 
-        productA.ProductAFunction();
+            productA.ProductAFunction();
+        }
     }
 }

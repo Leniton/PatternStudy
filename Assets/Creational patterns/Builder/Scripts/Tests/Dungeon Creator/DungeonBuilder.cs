@@ -1,44 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Patterns.Creational.Builder;
 
-public class DungeonBuilder : IBuilder
+namespace Patterns.Creational.Builder.Tests
 {
-    Product product = new();
-
-    public DungeonBuilder()
+    public class DungeonBuilder : IBuilder
     {
-        Reset();
-    }
+        Product product = new();
 
-    void Reset()
-    {
-        product = new();
-    }
+        public DungeonBuilder()
+        {
+            Reset();
+        }
 
-    public void StepA()
-    {
-        product.Add("Training room");
-    }
+        void Reset()
+        {
+            product = new();
+        }
 
-    public void StepB()
-    {
-        product.Add("Weaponry");
-    }
+        public void StepA()
+        {
+            product.Add("Training room");
+        }
 
-    public void StepC()
-    {
-        product.Add("Armory");
-    }
+        public void StepB()
+        {
+            product.Add("Weaponry");
+        }
 
-    public Product GetProduct()
-    {
-        Product result = product;
+        public void StepC()
+        {
+            product.Add("Armory");
+        }
 
-        //optional
-        Reset();
-        result.ListParts();
-        return result;
+        public Product GetProduct()
+        {
+            Product result = product;
+
+            //optional
+            Reset();
+            result.ListParts();
+            return result;
+        }
     }
 }

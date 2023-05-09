@@ -1,46 +1,46 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Patterns.Creational.Builder;
 
-public class MonsterBuilder : IBuilder
+namespace Patterns.Creational.Builder.Tests
 {
-    Monster monster = new();
-
-    public MonsterBuilder()
+    public class MonsterBuilder : IBuilder
     {
-        Reset();
-    }
+        Monster monster = new();
 
-    void Reset()
-    {
-        monster = new();
-    }
+        public MonsterBuilder()
+        {
+            Reset();
+        }
 
-    public void StepA()
-    {
-        monster.hp = 20;
-    }
+        void Reset()
+        {
+            monster = new();
+        }
 
-    public void StepB()
-    {
-        monster.atk = 8;
-    }
+        public void StepA()
+        {
+            monster.hp = 20;
+        }
 
-    public void StepC()
-    {
-        monster.def = 5;
-    }
+        public void StepB()
+        {
+            monster.atk = 8;
+        }
 
-    public Monster GetProduct()
-    {
-        Monster result = monster;
+        public void StepC()
+        {
+            monster.def = 5;
+        }
 
-        //optional
-        Reset();
+        public Monster GetProduct()
+        {
+            Monster result = monster;
 
-        Debug.Log($"Monster status:\nHP:{result.hp}\nATK:{result.atk}\nDEF:{result.def}");
+            //optional
+            Reset();
 
-        return result;
+            Debug.Log($"Monster status:\nHP:{result.hp}\nATK:{result.atk}\nDEF:{result.def}");
+
+            return result;
+        }
     }
 }

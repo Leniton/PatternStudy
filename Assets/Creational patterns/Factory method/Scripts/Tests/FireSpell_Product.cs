@@ -1,12 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Patterns.Creational.FactoryMethod;
 
-public class FireSpell_Product : IProduct
+namespace Patterns.Creational.FactoryMethod.Tests
 {
-    public void Operation()
+    public class FireSpell_Product : IProduct
     {
-        Debug.Log("fire spell activated");
+        public void Operation()
+        {
+            Debug.Log("fire spell activated");
+        }
     }
 }
