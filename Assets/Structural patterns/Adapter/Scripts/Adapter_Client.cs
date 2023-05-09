@@ -11,7 +11,8 @@ namespace Patterns.Structural.Adapter
 
             Debug.Log(target.GetRequest());
 
-            Debug.Log(new Target().GetRequest());
+            target = new Target();
+            Debug.Log(target.GetRequest());
         }
     }
 }
