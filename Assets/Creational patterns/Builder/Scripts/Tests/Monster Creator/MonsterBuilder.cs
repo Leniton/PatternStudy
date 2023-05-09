@@ -19,17 +19,17 @@ public class MonsterBuilder : IBuilder
 
     public void StepA()
     {
-        monster.AddPerk("Extra speed");
+        monster.hp = 20;
     }
 
     public void StepB()
     {
-        monster.AddPerk("Powerful attack");
+        monster.atk = 8;
     }
 
     public void StepC()
     {
-        monster.AddPerk("Extra defense");
+        monster.def = 5;
     }
 
     public Monster GetProduct()
@@ -38,6 +38,8 @@ public class MonsterBuilder : IBuilder
 
         //optional
         Reset();
+
+        Debug.Log($"Monster status:\nHP:{result.hp}\nATK:{result.atk}\nDEF:{result.def}");
 
         return result;
     }

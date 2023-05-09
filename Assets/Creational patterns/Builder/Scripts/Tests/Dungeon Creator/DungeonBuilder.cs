@@ -19,17 +19,17 @@ public class DungeonBuilder : IBuilder
 
     public void StepA()
     {
-        product.Add("Inner walls");
+        product.Add("Training room");
     }
 
     public void StepB()
     {
-        product.Add("Traps");
+        product.Add("Weaponry");
     }
 
     public void StepC()
     {
-        product.Add("Hidden treasure");
+        product.Add("Armory");
     }
 
     public Product GetProduct()
@@ -38,7 +38,7 @@ public class DungeonBuilder : IBuilder
 
         //optional
         Reset();
-
+        result.ListParts();
         return result;
     }
 }
