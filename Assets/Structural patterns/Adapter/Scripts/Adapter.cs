@@ -1,0 +1,18 @@
+
+namespace Patterns.Structural.Adapter
+{
+    public class Adapter : ITarget
+    {
+        private readonly Adaptee _adaptee;
+
+        public Adapter(Adaptee adaptee)
+        {
+            _adaptee = adaptee;
+        }
+
+        public string GetRequest()
+        {
+            return $"this is the number \"{_adaptee.GetSpecificRequest()}\"";
+        }
+    }
+}
