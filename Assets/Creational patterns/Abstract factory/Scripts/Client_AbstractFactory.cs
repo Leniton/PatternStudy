@@ -8,9 +8,9 @@ namespace Patterns.Creational.AbstractFactory
     {
         public void ClientFunction()
         {
-            ClientMethod(new SkeletonDungeon_Factory());
+            ClientMethod(new Tests.SkeletonDungeon_Factory());
             Debug.Log("----------------");
-            ClientMethod(new SlimeDungeon_Factory());
+            ClientMethod(new Tests.SlimeDungeon_Factory());
         }
 
         void ClientMethod(IAbstract_Factory factory)

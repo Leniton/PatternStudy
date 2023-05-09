@@ -10,7 +10,7 @@ namespace Patterns.Creational.Builder
         {
             Director director = new Director();
 
-            MonsterBuilder builder = new();
+            Tests.MonsterBuilder builder = new();
             director.Builder = builder;
 
             Debug.Log("Basic Product");
