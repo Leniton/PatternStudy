@@ -19,7 +19,7 @@ namespace Patterns.Creational.Builder
 
             for (int i = 0; i < parts.Count; i++)
             {
-                result += $"{parts[i].ToString()}, ";
+                result += $"{parts[i]}, ";
             }
 
             result = result.Remove(result.Length - 2, 2);

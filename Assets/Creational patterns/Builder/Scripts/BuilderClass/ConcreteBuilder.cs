@@ -37,7 +37,7 @@ namespace Patterns.Creational.Builder
 
             //optional
             Reset();
-
+            result.ListParts();
             return result;
         }
     }

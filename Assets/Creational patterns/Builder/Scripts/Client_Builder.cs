@@ -15,16 +15,16 @@ namespace Patterns.Creational.Builder
 
             Debug.Log("Basic Product");
             director.BuildMinimumViableProduct();
-            builder.GetProduct().ListParts();
+            builder.GetProduct();
 
             Debug.Log("Full Product");
             director.BuildFullProduct();
-            builder.GetProduct().ListParts();
+            builder.GetProduct();
 
             Debug.Log("Custom Product");
             builder.StepB();
             builder.StepC();
-            builder.GetProduct().ListParts();
+            builder.GetProduct();
         }
     }
 }
