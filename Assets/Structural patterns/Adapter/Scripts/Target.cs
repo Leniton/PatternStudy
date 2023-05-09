@@ -6,9 +6,10 @@ namespace Patterns.Structural.Adapter
 {
     public class Target : ITarget
     {
+        public string value = "123";
         public string GetRequest()
         {
-            return "this is the text \"123\"";
+            return $"this is the text \"{value}\"";
         }
     }
 }
