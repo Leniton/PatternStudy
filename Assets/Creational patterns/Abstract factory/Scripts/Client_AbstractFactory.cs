@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Patterns.Creational.AbstractFactory
 {
-    public class Client_AbstractFactory : IClient
+    public class Client : IClient
     {
         public void ClientFunction()
         {

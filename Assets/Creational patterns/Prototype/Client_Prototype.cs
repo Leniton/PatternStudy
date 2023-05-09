@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Patterns.Creational.Prototype
 {
-    public class Client_Prototype : IClient
+    public class Client : IClient
     {
         public void ClientFunction()
         {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Patterns.Creational.Builder
 {
-    public class Client_Builder : IClient
+    public class Client : IClient
     {
         public void ClientFunction()
         {

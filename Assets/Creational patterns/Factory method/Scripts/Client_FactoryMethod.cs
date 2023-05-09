@@ -5,7 +5,7 @@ using System;
 
 namespace Patterns.Creational.FactoryMethod
 {
-    public class Client_FactoryMethod : IClient
+    public class Client : IClient
     {
         public void ClientFunction()
         {
