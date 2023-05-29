@@ -5,14 +5,14 @@ using UnityEngine;
 [CustomEditor(typeof(Client_Caller))]
 public class ClientCaller_Editor : Editor
 {
-    public override VisualElement CreateInspectorGUI()
+    public override void OnInspectorGUI()
     {
-        VisualElement myInspector = new VisualElement();
+        base.OnInspectorGUI();
 
-        Button button = new Button(() => ((Client_Caller)target).Call_Client());
-        button.text = "Call Client";
-        myInspector.Add(button);
-
-        return myInspector;
+        if(GUILayout.Button("Call Client"))
+        {
+            Client_Caller caller = (Client_Caller)target;
+            caller.Call_Client();
+        }
     }
 }
