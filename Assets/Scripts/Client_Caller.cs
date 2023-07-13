@@ -12,7 +12,7 @@ public class Client_Caller : MonoBehaviour
 
     public void Call_Client()
     {
-        IClient client = new Patterns.Creational.Builder.Client();
+        IClient client = new Patterns.Structural.Bridge.Client();
 
         client.ClientFunction();
     }
