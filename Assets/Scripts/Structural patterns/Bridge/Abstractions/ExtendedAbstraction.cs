@@ -9,7 +9,7 @@ namespace Patterns.Structural.Bridge
         }
         public override void Operation()
         {
-            Debug.Log("ExtendedOperation");
+            Debug.Log("Extended abstraction");
             base.Operation();
         }
     }

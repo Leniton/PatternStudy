@@ -1,5 +1,5 @@
 using UnityEngine;
-using System;
+using Patterns.Structural;
 
 namespace Patterns.Structural.Bridge
 {

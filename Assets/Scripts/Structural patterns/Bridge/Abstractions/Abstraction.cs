@@ -9,7 +9,7 @@ namespace Patterns.Structural.Bridge
 
         public virtual void Operation()
         {
-            Debug.Log("operation");
+            Debug.Log("abstraction");
             _implementation.OperationImplementation();
         }
     }
