@@ -1,0 +1,28 @@
+using System;
+using UnityEngine;
+
+namespace Patterns.Structural.Composite
+{
+    public abstract class Component
+    {
+        public Component() { }
+
+        public abstract void Operation();
+
+        // In some cases, it would be beneficial to define the child-management
+        // operations right in the base Component class. This way, you won't
+        // need to expose any concrete component classes to the client code,
+        // even during the object tree assembly. The downside is that these
+        // methods will be empty for the leaf-level components.
+        public virtual void Add(Component component)
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual void Remove(Component component)
+        {
+            throw new NotImplementedException();
+        }
+        public virtual bool IsComposite() => false;
+    }
+}
