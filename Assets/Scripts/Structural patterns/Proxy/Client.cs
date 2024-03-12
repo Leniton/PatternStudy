@@ -35,6 +35,14 @@ namespace Patterns.Structural.Proxy
             logger.Request(0);
             Debug.Log("retrieving logs:");
             logger.GetLog();
+
+            /*
+             * Remote proxy handles the network aspect if the service comes from a remote server
+             */
+
+            /*
+             * Cashing proxy saves data that don't change often to avoid too many requests on the service
+             */
         }
     }
 }
