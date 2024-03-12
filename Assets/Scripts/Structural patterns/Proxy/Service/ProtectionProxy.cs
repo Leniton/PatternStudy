@@ -11,7 +11,7 @@ namespace Patterns.Structural.Proxy
         {
             if(id != 0)
             {
-                Debug.Log("access denied");
+                Debug.Log("Service access denied");
                 return;
             }
             realService.Request(id);

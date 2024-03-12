@@ -25,6 +25,16 @@ namespace Patterns.Structural.Proxy
             service.Request(0);
             Debug.Log("requesting from protection proxy with different id");
             service.Request(1);
+
+            Debug.Log("----------");
+
+            LoggingProxy logger = new LoggingProxy();
+            Debug.Log("making requests from logging proxy");
+            logger.Request(0);
+            logger.Request(1);
+            logger.Request(0);
+            Debug.Log("retrieving logs:");
+            logger.GetLog();
         }
     }
 }
