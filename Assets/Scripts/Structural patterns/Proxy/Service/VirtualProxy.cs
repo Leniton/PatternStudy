@@ -12,16 +12,16 @@ namespace Patterns.Structural.Proxy
             {
                 if (_realService == null)
                 {
-                    Debug.Log("service not available, creating one:");
+                    Debug.Log("Lazy initialization of real service");
                     _realService = new RealService();
                 }
                 return _realService;
             }
         }
 
-        public void Request()
+        public void Request(int id)
         {
-            realService.Request();
+            realService.Request(id);
         }
     }
 }
