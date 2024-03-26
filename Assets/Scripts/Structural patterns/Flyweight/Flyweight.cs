@@ -15,8 +15,8 @@ namespace Patterns.Structural.Flyweight
 
         public void Operation(Car uniqueState)
         {
-            string s = JsonConvert.SerializeObject(_sharedState);
-            string u = JsonConvert.SerializeObject(uniqueState);
+            string s = JsonUtility.ToJson(_sharedState);
+            string u = JsonUtility.ToJson(uniqueState);
             Debug.Log($"Flyweight: Displaying shared {s} and unique {u} state.");
         }
     }
