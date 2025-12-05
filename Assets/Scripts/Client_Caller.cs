@@ -10,7 +10,7 @@ public class Client_Caller : MonoBehaviour
 
     public void Call_Client()
     {
-        IClient client = new Patterns.Behavioral.Command.Client();
+        IClient client = new Patterns.Behavioral.Memento.Client();
         client.ClientFunction();
     }
 }
